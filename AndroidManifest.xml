@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.magcomm.floatview"
+    android:versionCode="1"
+	sharedUserId="android.uid.system"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+<uses-permission android:name="android.permission.INJECT_EVENTS"/>
+<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:persistent="true"
+        android:name="FloatApplication">
+        <activity
+            android:name=".MainActivity"
+	    android:launchMode="singleInstance"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+<!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <action android:name="com.android.intent.action.FLOATVIEW" />
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.device" />
+            <meta-data android:name="com.android.settings.title"
+                       android:resource="@string/screen_assistant" />
+            <meta-data android:name="com.android.settings.icon"
+                       android:resource="@drawable/ic_settings_screen_assitant" />
+            <!--<meta-data android:name="com.mediatek.settings.summary"
+                       android:value="com.mediatek.schpwronoff.ExtSummaryProvider" />-->
+        </activity>
+        <service android:name="com.magcomm.floatview.FxService" android:exported="true" ></service>
+        <receiver android:name="com.magcomm.floatview.FxReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

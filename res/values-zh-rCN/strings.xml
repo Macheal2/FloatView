@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">悬浮按钮</string>
+    <string name="screen_assistant">悬浮按钮</string>
+    <string name="screen_assistant_content">"开启后，可在大部分界面显示，可拖动之至屏幕左侧或右侧。点击将展开悬浮按钮，显示常用功能，包含返回、主屏幕、最近任务和锁屏功能。"</string>
+    <string name="screen_default_key">默认键</string>
+    <string name="screen_default_key_content">返回键</string>
+    <string name="screen_default_key_content_value">1</string>
+    <string-array name="key_name_entries">
+        <item>返回键</item>
+        <item>Home键</item>
+        <item>Menu键</item>
+        <item>电源键</item>
+        <!--<item>一键清除</item>-->
+    </string-array>
+    <string-array name="key_name_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <!--<item>4</item>-->
+    </string-array>
+</resources>

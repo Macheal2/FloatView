@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Screen assistant</string>
+    <string name="screen_assistant">Screen assistant</string>
+    <string name="screen_assistant_content">After opening, can be displayed in most of the interface, drag to the left or right side of the screen. Click on the button to expand the display, the display of common features, including back, home, the recent task and lock screen function.</string>
+    <string name="screen_default_key">Default key</string>
+    <string name="screen_default_key_content">Back</string>
+    <string name="screen_default_key_content_value">1</string>
+    <string-array name="key_name_entries">
+        <item>Back</item>
+        <item>Home</item>
+        <item>Menu</item>
+        <item>Power</item>
+        <!--<item>Clean</item>-->
+    </string-array>
+    <string-array name="key_name_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <!--<item>4</item>-->
+    </string-array>
+</resources>

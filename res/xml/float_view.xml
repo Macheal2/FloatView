@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="parent">
+    <!-- <CheckBoxPreference
+        android:key="key_screen_assistant"
+        android:defaultValue="@string/screen_assistant_content"
+        android:summary="@string/screen_assistant_content"
+        android:title="@string/screen_assistant" /> -->
+    <CheckBoxPreference 
+        android:key="key_screen_assistant"
+        android:title="@string/screen_assistant"
+        android:summary="@string/screen_assistant_content"
+        android:persistent="false"
+        android:defaultValue="fasle"
+        />
+
+    <ListPreference 
+        android:dependency="key_screen_assistant"
+        android:key="key_default"
+        android:defaultValue="@string/screen_default_key_content_value"
+        android:entryValues="@array/key_name_value"
+        android:persistent="false"
+        android:entries="@array/key_name_entries"
+        android:title="@string/screen_default_key"
+        />
+</PreferenceScreen>

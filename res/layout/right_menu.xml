@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<RelativeLayout
+	    android:id="@+id/relate_level1"
+        android:layout_width="126dip"
+        android:layout_height="215dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/right_circle_bg"
+        >
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/cancel_button_width"
+            android:layout_height="@dimen/cancel_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cancel_selector"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+	    android:id="@+id/relate_level2"
+        android:layout_width="126dip"
+        android:layout_height="215dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        >
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/image_button_width"
+            android:layout_height="@dimen/image_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/back_selector" />
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="@dimen/image_button_width"
+            android:layout_height="@dimen/image_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dip"
+            android:layout_marginRight="70dip"
+            android:background="@drawable/home_selector" />
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="@dimen/image_button_width"
+            android:layout_height="@dimen/image_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dip"
+            android:layout_marginRight="70dip"
+            android:background="@drawable/menu_selector" />
+        <ImageButton
+            android:id="@+id/lock"
+            android:layout_width="@dimen/image_button_width"
+            android:layout_height="@dimen/image_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/lock_selector" />
+    </RelativeLayout>
+</RelativeLayout>
